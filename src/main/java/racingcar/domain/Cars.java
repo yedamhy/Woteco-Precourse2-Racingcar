@@ -22,4 +22,9 @@ public class Cars {
     private boolean isMove(){
         return Randoms.pickNumberInRange(0, 9) >= 4;
     }
+
+    public List<Car> getAllCars(){
+        return cars;
+    }
+
 }
