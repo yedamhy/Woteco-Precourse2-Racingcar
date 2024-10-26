@@ -5,6 +5,7 @@ import racingcar.domain.Cars;
 import racingcar.view.InputView;
 import racingcar.view.OutView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RacingGame {
@@ -21,6 +22,7 @@ public class RacingGame {
             OutView.printRaceStatus(gameCars.getAllCars());
         }
 
-
+        List<Car> winners = gameCars.getWinners();
+        OutView.printWinner(winners);
     }
 }

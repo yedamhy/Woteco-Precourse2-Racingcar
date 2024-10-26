@@ -11,4 +11,14 @@ public class OutView {
         }
         System.out.println();
     }
+
+    public static void printWinner(List<Car> winners){
+        System.out.print("최종 우승자 : ");
+        String winnerNames = String.join(", ",
+                winners.stream()
+                        .map(Car::getName)
+                        .toList());
+
+        System.out.println(winnerNames);
+    }
 }
