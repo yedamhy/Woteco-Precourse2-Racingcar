@@ -10,8 +10,8 @@ import java.util.List;
 public class RacingGame {
     public void start(){
         InputView inputView = new InputView();
-        int tryNumber = inputView.getTryNumber();
         List<Car> cars = inputView.getCars();
+        int tryNumber = inputView.getTryNumber();
 
         Cars gameCars = new Cars(cars);
 
