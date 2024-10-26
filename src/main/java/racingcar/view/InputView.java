@@ -14,4 +14,9 @@ public class InputView {
 
         return Arrays.stream(carNames).map(Car::new).toList();
     }
+
+    public int getTryNumber(){
+        System.out.println("시도할 횟수는 몇 회인가요?");
+        return Integer.parseInt(Console.readLine());
+    }
 }
