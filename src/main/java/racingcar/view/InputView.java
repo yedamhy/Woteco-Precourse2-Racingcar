@@ -28,6 +28,10 @@ public class InputView {
 
     private void validateCarsName(String[] carNames){
         for(String carName : carNames){
+            if(carName.trim().isEmpty()){
+                throw new IllegalArgumentException("자동차 이름으로 Null 값 대신 적잘한 이름을 지어주세요.");
+            }
+
             if(carName.length() > 5){
                 throw new IllegalArgumentException("각 자동차의 이름은 5글자 이하로 지어주세요.");
             }
